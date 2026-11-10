@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice">
+<defs><radialGradient id="s" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f5c55a"/><stop offset=".6" stop-color="#e08a2e"/><stop offset="1" stop-color="#c4602f" stop-opacity="0"/></radialGradient>
+<symbol id="d" viewBox="0 0 40 100"><g fill="currentColor" stroke="currentColor" stroke-linecap="round"><circle cx="20" cy="10" r="8" stroke="none"/><path d="M20 20V50M20 28 5 10M20 28 35 14" stroke-width="5" fill="none"/><path d="M12 46H28L38 98H2Z" stroke="none"/></g></symbol>
+<symbol id="a" viewBox="0 0 40 70"><g fill="currentColor"><path d="M6 2H34L28 66H12Z"/></g><g stroke="#1a1a14" stroke-width="2" fill="none"><path d="M6 14H34M8 28H32M10 42H30"/></g></symbol></defs>
+<circle cx="600" cy="250" r="230" fill="url(#s)"/>
+<rect y="372" width="1200" height="48" fill="#1a1a14"/>
+<g style="color:#0f0f0a"><use href="#d" x="330" y="262" width="52" height="130"/><use href="#d" x="410" y="282" width="46" height="112"/><use href="#d" x="490" y="250" width="56" height="140"/><use href="#d" x="640" y="258" width="54" height="134"/><use href="#d" x="730" y="284" width="46" height="110"/><use href="#d" x="805" y="262" width="52" height="130"/><use href="#a" x="565" y="318" width="44" height="76"/></g>
+<g style="color:#166d14" opacity=".9"><use href="#d" x="90" y="300" width="40" height="95"/><use href="#d" x="150" y="316" width="36" height="80"/><use href="#d" x="1010" y="304" width="40" height="92"/><use href="#d" x="1070" y="318" width="36" height="78"/></g>
+</svg>

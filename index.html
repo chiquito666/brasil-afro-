@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasil Afro – Educação das Relações Étnico-Raciais</title>
+<meta name="description" content="Plataforma educativa sobre cultura afro-brasileira, povos originários e letramento racial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap barra">
+    <a href="#inicio" class="marca" data-sec="inicio"><img src="assets/logo.png" alt="Logo Brasil Afro"></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu" aria-label="Principal">
+      <a href="#inicio" data-sec="inicio">Início</a>
+      <a href="#biografias" data-sec="biografias">Biografias</a>
+      <a href="#cultura" data-sec="cultura">Cultura e Ciência</a>
+      <a href="#conceitos" data-sec="conceitos">Conceitos</a>
+      <a href="#quiz" data-sec="quiz">Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="sec ativa">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Conhecer a nossa história é o primeiro passo para mudá-la.</h1>
+      <p>Brasil Afro reúne vidas, saberes e conceitos da cultura de matriz africana e dos povos originários para estudar, debater e valorizar.</p>
+      <div class="botoes"><a class="btn" href="#biografias" data-sec="biografias">Conhecer as biografias</a><a class="btn sec2" href="#quiz" data-sec="quiz">Jogar o quiz</a></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="fato">
+      <h2 class="titulo">Você sabia?</h2>
+      <p id="fatoTexto"></p>
+      <button class="btn pequeno" id="novoFato">Mostrar outro fato</button>
+    </div>
+    <h2 class="titulo">Os três eixos do projeto</h2>
+    <div class="grade">
+      <a class="card eixo" href="#biografias" data-sec="biografias"><h3>Eixo A: Biografias e protagonismo</h3><p>Trajetórias de pessoas negras e indígenas que transformaram o Brasil.</p></a>
+      <a class="card eixo" href="#cultura" data-sec="cultura"><h3>Eixo B: Cultura e ciência</h3><p>Saberes, tecnologias, música, literatura e gastronomia de matrizes africanas e originárias.</p></a>
+      <a class="card eixo" href="#conceitos" data-sec="conceitos"><h3>Eixo C: Conceitos e letramento racial</h3><p>Glossário pesquisável para entender antirracismo, equidade, ancestralidade e mais.</p></a>
+    </div>
+    <h2 class="titulo">Por que estas cores?</h2>
+    <ul class="paleta">
+      <li><i style="background:#ecb142"></i><b>Dourado</b> – o sol, a riqueza cultural e o ouro das mãos que construíram o país.</li>
+      <li><i style="background:#3fa63a"></i><b>Verde</b> – as matas, a terra e os povos originários.</li>
+      <li><i style="background:#2a4fb8"></i><b>Azul</b> – o céu, a água e a travessia do Atlântico.</li>
+      <li><i style="background:#c4602f"></i><b>Terracota</b> – o barro, o tambor e a ancestralidade.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="biografias" class="sec">
+  <div class="wrap">
+    <h2 class="titulo">Biografias e protagonismo</h2>
+    <p class="intro">Pessoas que lutaram, escreveram, pensaram e seguem lutando.</p>
+    <div class="filtros" role="group" aria-label="Filtrar biografias">
+      <button class="chip on" data-f="todos">Todos</button><button class="chip" data-f="negra">Negras</button><button class="chip" data-f="indigena">Indígenas</button>
+    </div>
+    <div class="grade" id="gradeBio"></div>
+  </div>
+</section>
+
+<section id="cultura" class="sec">
+  <div class="wrap">
+    <h2 class="titulo">Cultura e ciência</h2>
+    <p class="intro">O Brasil também é feito de conhecimento: do ferro à mandioca, do tambor ao livro.</p>
+    <div class="grade" id="gradeCult"></div>
+  </div>
+</section>
+
+<section id="conceitos" class="sec">
+  <div class="wrap">
+    <h2 class="titulo">Conceitos e letramento racial</h2>
+    <p class="intro">Digite uma palavra para filtrar o glossário em tempo real.</p>
+    <label class="busca"><span class="sr">Buscar no glossário</span><input type="search" id="busca" placeholder="Ex.: equidade, quilombo, ancestralidade…" autocomplete="off"></label>
+    <p class="contador" id="contador" aria-live="polite"></p>
+    <div class="grade" id="gradeGlos"></div>
+  </div>
+</section>
+
+<section id="quiz" class="sec">
+  <div class="wrap">
+    <h2 class="titulo">Quiz de curiosidades</h2>
+    <div class="card quiz" id="quizBox" aria-live="polite"></div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <img src="assets/logo.png" alt="Brasil Afro" class="logo-rodape">
+    <p><b>Desenvolvido por:</b> Nome do Aluno 1 · Nome do Aluno 2 · Nome do Aluno 3</p>
+    <p>Colégio Estadual Presidente Kennedy · Técnico em Desenvolvimento de Sistemas · 2º Ano · Prof.ª Rosa Cristina Hoffmann</p>
+    <p class="mini">Projeto ERER – Educação das Relações Étnico-Raciais. Criado com apoio de Inteligência Artificial na ideação, nos textos e no código. Créditos das imagens: Ailton Krenak (Neto Gonçalves/Companhia das Letras) e Sonia Guajajara (Flickr/Mídia Ninja); demais retratos de acervo público ou representações artísticas.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
